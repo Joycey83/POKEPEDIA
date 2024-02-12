@@ -14,5 +14,6 @@
 .pokemon-container {
   max-width: 960px;
   margin: 4rem auto;
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.205);
+  padding: 5rem 2rem;
 }

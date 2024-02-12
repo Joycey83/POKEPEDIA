@@ -1,6 +1,6 @@
 function displayPokemon(response) {
   console.log(response);
-
+  const pokeContainer = document.querySelector(".pokemon-container");
   const headingThree = document.createElement("h3");
   headingThree.innerText = response.data.species.name;
   document.body.appendChild(headingThree);
@@ -13,7 +13,7 @@ function displayPokemon(response) {
   // if (imgDiv.src === null) {
   //   response.data.sprites.other.home.front_default;
   // }
-  document.body.appendChild(imgDiv);
+  pokeContainer.appendChild(imgDiv);
 }
 let url = `https://pokeapi.co/api/v2/pokemon/255`;
 axios.get(url).then(displayPokemon);
