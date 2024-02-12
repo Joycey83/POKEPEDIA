@@ -15,5 +15,5 @@ function displayPokemon(response) {
   // }
   document.body.appendChild(imgDiv);
 }
-let url = `https://pokeapi.co/api/v2/pokemon/1025`;
+let url = `https://pokeapi.co/api/v2/pokemon/255`;
 axios.get(url).then(displayPokemon);

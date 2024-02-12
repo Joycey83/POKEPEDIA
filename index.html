@@ -3,9 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AXIOS -->
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <!-- IONICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <script src="/assets/js/pokemon.js" defer></script>
     <title>Pokepedia</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <!-- search engine -->
+      <div class="search-box-container">
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter Name or ID..."
+            class="search-box"
+            id="pokemon-name-input"
+            autocomplete="off"
+          />
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+          <button class="shuffle-btn" id="shuffle-button">
+            <ion-icon name="shuffle-outline"></ion-icon>
+          </button>
+        </form>
+      </div>
+
+      <div class="pokemon-container"></div>
+    </main>
+  </body>
 </html>
