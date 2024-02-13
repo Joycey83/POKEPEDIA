@@ -11,6 +11,18 @@
   align-items: center;
 }
 
+.search-box {
+  width: 250px;
+  padding: 1rem;
+  margin: 0 0.5rem;
+}
+
+.search-btn,
+.shuffle-btn {
+  padding: 1rem;
+  margin: 0 0.5rem;
+}
+
 .pokemon-container {
   max-width: 960px;
   margin: 4rem auto;
