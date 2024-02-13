@@ -24,8 +24,24 @@
 }
 
 .pokemon-container {
-  max-width: 960px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1250px;
   margin: 4rem auto;
-  background-color: rgba(255, 0, 0, 0.205);
+  /* background-color: rgba(0, 0, 0, 0.949); */
   padding: 5rem 2rem;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 400px;
+  /* display: flex;
+  justify-content: space-around; */
+  /* align-items: center; */
+}
+
+.poke--img {
+  display: block;
+  width: 350px;
+  height: 350px;
 }
