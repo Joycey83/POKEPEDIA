@@ -28,7 +28,7 @@
     <!-- AXIOS -->
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <script src="/assets/js/pokemon.js" defer></script>
+    <!-- <script src="/assets/js/pokemon.js" defer></script> -->
     <title>Pokepedia</title>
   </head>
   <body>
@@ -51,14 +51,20 @@
           </button>
         </form>
       </div>
-
-      <div class="pokemon-container">
-        <h1 class="poke-name"></h1>
-
-        <div class="img-wrapper">
-          <img src="" alt="" />
+      <!-- Pokemon Image -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col text-center poke-container">
+            <span class="poke-number">#222</span>
+            <h1 class="poke-name">Pokemon Name</h1>
+            <img
+              class="poke-img"
+              src="https://purepng.com/public/uploads/large/purepng.com-pokemonpokemonpocket-monsterspokemon-franchisefictional-speciesone-pokemonmany-pokemonone-pikachu-1701527784812pkckd.png"
+              alt=""
+              width="200"
+            />
+          </div>
         </div>
-        <div class="poke--info"></div>
       </div>
     </main>
   </body>
