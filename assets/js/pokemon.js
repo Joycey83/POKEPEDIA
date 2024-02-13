@@ -8,8 +8,9 @@ function displayPokemon(response) {
 
   // Getting both types
   response.data.types.forEach((type) => {
-    const typeName = document.createElement("p");
+    const typeName = document.createElement("span");
     typeName.innerText = type.type.name;
+    typeName.classList.add(createColorSpan(type.type.name));
     pokeContainer.appendChild(typeName);
   });
 
@@ -24,12 +25,8 @@ function displayPokemon(response) {
   axios.get(url).then(displayMoreInfo);
 }
 
-let url = "https://pokeapi.co/api/v2/pokemon/125";
+let url = "https://pokeapi.co/api/v2/pokemon/50";
 axios.get(url).then(displayPokemon);
-
-// function sanitizeString(str) {
-//   return str.replace(/[^0-9a-z\s]/gi, "");
-// }
 
 function displayMoreInfo(response) {
   const pokeInfoContainer = document.querySelector(".poke--info");
@@ -49,16 +46,6 @@ function displayMoreInfo(response) {
   pokeInfoContainer.appendChild(description);
 
   console.log(response.data.flavor_text_entries[9].flavor_text);
-}
-
-const pokeInfoContainer = document.querySelector(".poke--info");
-function createTypeSpan(type) {
-  const typeSpan = document.createElement("span");
-  typeSpan.classList.add(createColorSpan(type));
-  pokeInfoContainer.appendChild(typeSpan);
-  typeSpan.innertext = type;
-
-  return typeSpan;
 }
 
 function createColorSpan(type) {

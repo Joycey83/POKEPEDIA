@@ -64,6 +64,7 @@
   padding: 5px 10px;
   margin-right: 10px;
   border-radius: 5px;
+  width: 50px;
 }
 
 .fire-type {
@@ -74,10 +75,13 @@
 }
 
 .water-type {
+  text-align: center;
+  font-size: 1.5rem;
   background-color: #00bfff;
   padding: 5px 10px;
   margin-right: 10px;
   border-radius: 5px;
+  width: 25%;
 }
 
 .poison-type {
@@ -120,13 +124,18 @@
   padding: 5px 10px;
   margin-right: 10px;
   border-radius: 5px;
+  width: 50%;
 }
 
 .psychic-type {
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
   background-color: #f1a7fe;
   padding: 5px 10px;
   margin-right: 10px;
   border-radius: 5px;
+  width: 25%;
 }
 
 .bug-type {
