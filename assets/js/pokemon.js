@@ -6,7 +6,7 @@ function displayPokemon(response) {
   headingOne.innerText = response.data.name;
   pokeContainer.appendChild(headingOne);
 
-  // Getting both types
+  // Getting both types and adding specific color type
   response.data.types.forEach((type) => {
     const typeName = document.createElement("span");
     typeName.innerText = type.type.name;
