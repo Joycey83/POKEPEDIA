@@ -24,21 +24,20 @@ function displayPokemon(response) {
   axios.get(url).then(displayMoreInfo);
 }
 
-let url = "https://pokeapi.co/api/v2/pokemon/54";
+let url = "https://pokeapi.co/api/v2/pokemon/125";
 axios.get(url).then(displayPokemon);
 
-function sanitizeString(str) {
-  return str.replace(/[^0-9a-z\s]/gi, "");
-}
+// function sanitizeString(str) {
+//   return str.replace(/[^0-9a-z\s]/gi, "");
+// }
 
 function displayMoreInfo(response) {
+  const pokeInfoContainer = document.querySelector(".poke--info");
   console.log(response);
-  const pokeContainer = document.querySelector(".poke--info");
   const description = document.createElement("span");
-  description.innerText = sanitizeString(
-    response.data.flavor_text_entries[7].flavor_text
-  );
-  pokeContainer.appendChild(description);
 
-  console.log(response.data.flavor_text_entries[7].flavor_text);
+  description.innerText = response.data.flavor_text_entries[9].flavor_text;
+  pokeInfoContainer.appendChild(description);
+
+  console.log(response.data.flavor_text_entries[9].flavor_text);
 }
