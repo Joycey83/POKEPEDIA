@@ -45,3 +45,142 @@
   width: 350px;
   height: 350px;
 }
+
+/* DEFAULT POKEMON TYPE STYLE */
+
+.pokemon-type-span {
+  display: inline-block;
+  background-color: #ffc40c;
+  color: #0f0e0e;
+  padding: 5px 10px;
+  margin: 0.3rem 0.2rem;
+  border-radius: 5px;
+}
+
+/* STYLES FOR TYPE SPAN */
+
+.grass-type {
+  background-color: #008000;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.fire-type {
+  background-color: #b22222;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.water-type {
+  background-color: #00bfff;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.poison-type {
+  background-color: #69359c;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.rock-type {
+  background-color: #555555;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.ground-type {
+  background-color: #987654;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.normal-type {
+  background-color: #f4f0ec;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.flying-type {
+  background-color: #b19cd9;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.fairy-type {
+  background-color: #ff77ff;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.psychic-type {
+  background-color: #f1a7fe;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.bug-type {
+  background-color: #26de81;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.electric-type {
+  background-color: #f5c71a;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.ice-type {
+  background-color: #b9f2ff;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.fighting-type {
+  background-color: #c19a6b;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.ghost-type {
+  background-color: #856088;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.dark-type {
+  background-color: #6b4423;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.steel-type {
+  background-color: #848482;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.dragon-type {
+  background-color: #9966cc;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
