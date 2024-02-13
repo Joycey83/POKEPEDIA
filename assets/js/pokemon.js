@@ -54,6 +54,7 @@ function displayMoreInfo(response) {
 const pokeInfoContainer = document.querySelector(".poke--info");
 function createTypeSpan(type) {
   const typeSpan = document.createElement("span");
+  typeSpan.classList.add(createColorSpan(type));
   pokeInfoContainer.appendChild(typeSpan);
   typeSpan.innertext = type;
 
