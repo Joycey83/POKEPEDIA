@@ -43,7 +43,7 @@
             id="pokemon-name-input"
             autocomplete="off"
           />
-          <button class="search-btn">
+          <button class="search-btn" id="search-btn">
             <ion-icon name="search-outline"></ion-icon>
           </button>
           <button class="shuffle-btn" id="shuffle-button">
@@ -54,7 +54,9 @@
       <!-- Pokemon Image -->
       <div class="container-fluid">
         <div class="row">
-          <div class="col text-center poke-container">
+          <div
+            class="d-flex justify-content-center align-items-center flex-column poke-container"
+          >
             <span class="poke-number"></span>
             <h1 class="poke-name"></h1>
             <img class="poke-img" src="" />
