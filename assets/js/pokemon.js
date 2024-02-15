@@ -123,3 +123,6 @@ function createColorSpan(type) {
       return "pokemon-type-span";
   }
 }
+
+shuffleBtn.addEventListener("click", catchThePokemon);
+window.addEventListener("load", catchThePokemon);
