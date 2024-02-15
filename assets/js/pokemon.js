@@ -73,11 +73,11 @@ const displayPokemon = (data) => {
     </div>
   `;
 
-  card.appendChild(nameElement);
-  card.appendChild(hpElement);
-  card.appendChild(imgElement);
-  card.appendChild(typesContainer);
-  card.appendChild(statsElement);
+  pokemonCard.appendChild(nameElement);
+  pokemonCard.appendChild(hpElement);
+  pokemonCard.appendChild(imgElement);
+  pokemonCard.appendChild(typesContainer);
+  pokemonCard.appendChild(statsElement);
 };
 
 // function to get the color types from each specific pokemon
