@@ -1,5 +1,5 @@
 const inputElement = document.querySelector("#pokemon-name-input");
-// const searchBtn = document.querySelector("#search-btn");
+const searchBtn = document.querySelector("#search-btn");
 const randomBtn = document.querySelector("#shuffle-button");
 const pokemonContainer = document.querySelector(".poke-container");
 const pokemonNum = document.querySelector(".poke-number");
@@ -12,7 +12,7 @@ const catchThePokemon = async () => {
 
   let pokemonName = inputElement.value.toLowerCase();
   // Generate a random number between 1 and 150
-  let pokemonId = Math.floor(Math.random() * 350) + 1;
+  let pokemonId = Math.floor(Math.random() * 400) + 1;
   // Combine the pokeapi url with pokemon id
   const finalUrl = pokemonName
     ? pokeApiUrl + pokemonName
@@ -128,7 +128,7 @@ function createColorSpan(type) {
   }
 }
 
-randomBtn.addEventListener("click", (event) => {
+searchBtn.addEventListener("click", (event) => {
   event.preventDefault();
   catchThePokemon();
 });
