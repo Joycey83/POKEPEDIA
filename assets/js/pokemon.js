@@ -10,9 +10,9 @@ const catchThePokemon = async () => {
   pokemonCard.innerHTML = "";
 
   let pokemonName = inputElement.value.toLowerCase();
-  // Generate a random number between 1 and 150
+  // Generate a random number between 1 and 400
   let pokemonId = Math.floor(Math.random() * 400) + 1;
-  // Combine the pokeapi url with pokemon id
+
   let finalUrl = pokeApiUrl;
   if (!isNaN(pokemonName) && pokemonName > 400) {
     alert(
