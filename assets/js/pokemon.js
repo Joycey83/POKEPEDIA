@@ -14,9 +14,18 @@ const catchThePokemon = async () => {
   // Generate a random number between 1 and 150
   let pokemonId = Math.floor(Math.random() * 400) + 1;
   // Combine the pokeapi url with pokemon id
-  const finalUrl = pokemonName
-    ? pokeApiUrl + pokemonName
-    : pokeApiUrl + pokemonId;
+  let finalUrl = pokeApiUrl;
+  if (!isNaN(pokemonName) && pokemonName > 400) {
+    alert("Pokemon not found!");
+    return;
+  } else if (pokemonName) {
+    finalUrl += pokemonName;
+  } else {
+    finalUrl += pokemonId;
+  }
+  // const finalUrl = pokemonName
+  //   ? pokeApiUrl + pokemonName
+  //   : pokeApiUrl + pokemonId;
   // Fetch generated URL using axios
   try {
     const fetchPokemon = await axios.get(finalUrl);
