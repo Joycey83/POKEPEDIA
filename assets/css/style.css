@@ -41,7 +41,6 @@
 /* DEFAULT POKEMON TYPE STYLE */
 
 .pokemon-type-span {
-  display: inline-block;
   background-color: #ffc40c;
   color: #0f0e0e;
   padding: 5px 10px;
@@ -67,7 +66,6 @@
 
 .water-type {
   text-align: center;
-  font-size: 1.5rem;
   background-color: #00bfff;
   padding: 5px 10px;
   margin-right: 10px;
