@@ -16,7 +16,9 @@ const catchThePokemon = async () => {
   // Combine the pokeapi url with pokemon id
   let finalUrl = pokeApiUrl;
   if (!isNaN(pokemonName) && pokemonName > 400) {
-    alert("Pokemon not found!");
+    alert(
+      "You catched your limit of Pokemons, you can't catch all of them!! HA HA HA"
+    );
     return;
   } else if (pokemonName) {
     finalUrl += pokemonName;
