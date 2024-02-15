@@ -1,6 +1,5 @@
 const inputElement = document.querySelector("#pokemon-name-input");
-const searchBtn = document.querySelector("#search-btn");
-const randomBtn = document.querySelector("#shuffle-button");
+const generateBtn = document.querySelector("#generate-button");
 const pokemonContainer = document.querySelector(".poke-container");
 const pokemonNum = document.querySelector(".poke-number");
 const pokemonCard = document.querySelector("#pokemon-card");
@@ -139,9 +138,7 @@ function createColorSpan(type) {
   }
 }
 
-searchBtn.addEventListener("click", (event) => {
+generateBtn.addEventListener("click", (event) => {
   event.preventDefault();
   catchThePokemon();
 });
-
-window.addEventListener("load", catchThePokemon);
