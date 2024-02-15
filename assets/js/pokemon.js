@@ -25,14 +25,6 @@ const catchThePokemon = async () => {
     finalUrl += pokemonId;
   }
 
-  if (pokemonName === "0") {
-    pokemonCard.textContent = "No pokemon number 0";
-  } else if (pokemonName) {
-    finalUrl += pokemonName;
-  } else {
-    finalUrl += pokemonId;
-  }
-
   // Fetch generated URL using axios
   try {
     const fetchPokemon = await axios.get(finalUrl);
