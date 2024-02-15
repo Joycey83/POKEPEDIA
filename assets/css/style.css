@@ -32,18 +32,10 @@
   padding: 5rem 2rem;
 }
 
-.img-wrapper {
-  position: relative;
-  width: 400px;
-  /* display: flex;
-  justify-content: space-around; */
-  /* align-items: center; */
-}
-
-.poke--img {
-  display: block;
-  width: 350px;
-  height: 350px;
+.generate-btn {
+  padding: 0.4rem;
+  border: none;
+  background-color: red;
 }
 
 /* DEFAULT POKEMON TYPE STYLE */
@@ -64,7 +56,6 @@
   padding: 5px 10px;
   margin-right: 10px;
   border-radius: 5px;
-  width: 50px;
 }
 
 .fire-type {
@@ -81,7 +72,6 @@
   padding: 5px 10px;
   margin-right: 10px;
   border-radius: 5px;
-  width: 25%;
 }
 
 .poison-type {
@@ -124,7 +114,6 @@
   padding: 5px 10px;
   margin-right: 10px;
   border-radius: 5px;
-  width: 50%;
 }
 
 .psychic-type {
@@ -135,7 +124,6 @@
   padding: 5px 10px;
   margin-right: 10px;
   border-radius: 5px;
-  width: 25%;
 }
 
 .bug-type {
