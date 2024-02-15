@@ -128,4 +128,7 @@ function createColorSpan(type) {
   }
 }
 
-randomBtn.addEventListener("click", catchThePokemon);
+randomBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  catchThePokemon();
+});
