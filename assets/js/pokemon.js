@@ -143,3 +143,5 @@ searchBtn.addEventListener("click", (event) => {
   event.preventDefault();
   catchThePokemon();
 });
+
+window.addEventListener("load", catchThePokemon);
