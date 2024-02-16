@@ -47,10 +47,12 @@ const displayPokemon = (data) => {
 
   //   Create a new container for the type spans
   const typesContainer = document.createElement("div");
+  typesContainer.className = "pokeTypeSpan-container";
 
   // Getting both types and adding specific color type
   data.types.forEach((type) => {
     const typeName = document.createElement("span");
+    typeName.className = "poke-type-span";
     typeName.innerText = type.type.name;
     typeName.classList.add(createColorSpan(type.type.name));
     typesContainer.appendChild(typeName);
