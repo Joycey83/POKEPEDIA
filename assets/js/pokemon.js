@@ -3,11 +3,13 @@ const generateBtn = document.querySelector("#generate-button");
 const pokemonContainer = document.querySelector(".poke-container");
 const pokemonNum = document.querySelector(".poke-number");
 const pokemonCard = document.querySelector("#pokemon-card");
+const errorMessage = document.querySelector("#error-message");
 
 const pokeApiUrl = " https://pokeapi.co/api/v2/pokemon/";
 
 const catchThePokemon = async () => {
   pokemonCard.innerHTML = "";
+  errorMessage.innerHTML = "";
 
   let pokemonName = inputElement.value.toLowerCase();
   // Generate a random number between 1 and 400
@@ -30,7 +32,7 @@ const catchThePokemon = async () => {
     const fetchPokemon = await axios.get(finalUrl);
     displayPokemon(fetchPokemon.data);
   } catch (error) {
-    console.log(error);
+    errorMessage.innerHTML = `<h2 class="error-heading">OH NOOOOOOOOOOOOO invalid Pokemon Number or Name! Please try again</h2> <img class="error-img" src="../image/no-pokemon-img.png"/>`;
   }
 };
 
