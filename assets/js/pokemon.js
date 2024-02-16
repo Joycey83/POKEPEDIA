@@ -4,12 +4,14 @@ const pokemonContainer = document.querySelector(".poke-container");
 const pokemonNum = document.querySelector(".poke-number");
 const pokemonCard = document.querySelector("#pokemon-card");
 const errorMessage = document.querySelector("#error-message");
+const pokemonLimit = document.querySelector("#poke-limit");
 
 const pokeApiUrl = " https://pokeapi.co/api/v2/pokemon/";
 
 const catchThePokemon = async () => {
   pokemonCard.innerHTML = "";
   errorMessage.innerHTML = "";
+  pokemonLimit.innerHTML = "";
 
   let pokemonName = inputElement.value.toLowerCase();
   // Generate a random number between 1 and 400
