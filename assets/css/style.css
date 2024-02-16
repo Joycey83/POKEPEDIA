@@ -17,12 +17,8 @@
   margin: 0 0.5rem;
 }
 
-.shuffle-icon {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
 .generate-btn {
+  position: relative;
   font-size: 15px;
   font-family: Arial;
   width: 70px;
@@ -42,6 +38,15 @@
 
 .generate-btn:hover {
   background: linear-gradient(#c62d1f, #f24537);
+}
+
+.shuffle-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 2rem;
 }
 
 /* DEFAULT POKEMON TYPE STYLE */
