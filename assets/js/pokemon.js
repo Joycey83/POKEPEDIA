@@ -37,7 +37,6 @@ const catchThePokemon = async () => {
 };
 
 const displayPokemon = (data) => {
-  const { id, weight, height, abilities } = data;
   console.log(data);
   const hp = data.stats[0].base_stat;
   const imgSrc = data.sprites.other.dream_world.front_default;

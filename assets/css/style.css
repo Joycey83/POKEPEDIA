@@ -23,14 +23,14 @@
   margin: 0 0.5rem;
 }
 
-.pokemon-container {
+/* .pokemon-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1250px;
   margin: 4rem auto;
-  /* background-color: rgba(0, 0, 0, 0.949); */
+  
   padding: 5rem 2rem;
-}
+} */
 
 .generate-btn {
   padding: 0.4rem;
@@ -179,7 +179,26 @@
 }
 
 .poke-container {
-  margin-top: 6rem;
+  margin-top: 2rem;
+  /* background-color: #646c64; */
+}
+
+.pokemon--card {
+  padding: 4rem;
+  margin: 1rem auto;
+}
+
+.poke-img {
+  display: block;
+  margin: 2rem auto;
+  width: 280px;
+  height: 280px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
 }
 
 /* ERROR MESSAGE STYLES */
