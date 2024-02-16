@@ -17,14 +17,13 @@
   margin: 0 0.5rem;
 }
 
-.search-btn,
-.shuffle-btn {
-  padding: 1rem;
-  margin: 0 0.5rem;
+.shuffle-icon {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .generate-btn {
-  padding: 0.4rem;
+  padding: 0.7rem;
   border: none;
   background-color: red;
 }
@@ -169,16 +168,27 @@
   border-radius: 5px;
 }
 
+.poke-name {
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
 .poke-container {
-  margin-top: 2rem;
+  margin-top: 2rem 0;
   /* background-color: #646c64; */
 }
 
-.pokemon--card {
+.poke-card {
   padding: 4rem;
   margin: 1rem auto;
 }
-
+.hp-heading {
+  color: red;
+}
+.hp {
+  font-size: 2rem;
+}
 .poke-img {
   display: block;
   margin: 2rem auto;
@@ -194,12 +204,13 @@
 }
 
 .pokeTypeSpan-container {
-  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .poke-type-span {
-  display: inline-block;
-  margin-left: 0.5rem;
+  color: #fff;
 }
 
 /* ERROR MESSAGE STYLES */

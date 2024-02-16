@@ -65,7 +65,7 @@ const displayPokemon = (data) => {
 
   const hpElement = document.createElement("p");
   hpElement.className = "hp";
-  hpElement.innerHTML = `<span>HP</span> ${hp}`;
+  hpElement.innerHTML = `<span class="hp-heading">HP</span> ${hp}`;
 
   const imgElement = document.createElement("img");
   imgElement.className = "poke-img";
