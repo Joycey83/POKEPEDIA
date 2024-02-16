@@ -183,7 +183,8 @@
 }
 
 /* ERROR MESSAGE STYLES */
-.error-img {
+.error-img,
+.poke-limit-img {
   display: block;
   margin: 0 auto;
   width: 300px;

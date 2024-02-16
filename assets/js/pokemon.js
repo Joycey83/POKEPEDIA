@@ -19,9 +19,7 @@ const catchThePokemon = async () => {
 
   let finalUrl = pokeApiUrl;
   if (!isNaN(pokemonName) && pokemonName > 400) {
-    alert(
-      "You catched your limit of Pokemons, you can't catch all of them!! HA HA HA"
-    );
+    pokemonLimit.innerHTML = `<img class="poke-limit-img" src="assets/image/cant-catch-all-logo.jpg"/>`;
     return;
   } else if (pokemonName) {
     finalUrl += pokemonName;
