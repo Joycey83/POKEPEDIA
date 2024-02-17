@@ -16,26 +16,32 @@ body {
 }
 
 .search-box {
-  /* font-size: 18px;
-  padding: 5px 10px; */
+  font-size: 18px;
+  padding: 10px 10px;
   /* width: 100%; */
-  /* padding-left: 34px;
+  padding-left: 34px;
   outline: none;
   background: #ffffff;
   color: #000000;
   border: 4px solid #e3350d;
   border-radius: 2px;
   box-shadow: 3px 3px 2px 0px #e2e2e2;
-  transition: 0.3s ease; */
-  width: 250px;
-  padding: 0.5rem;
-  margin: 0 0.5rem;
+  transition: 0.3s ease;
+}
+
+.search-box:focus {
+  background: #f2f2f2;
+  border: 2px solid #101623;
+  border-radius: 11px;
+}
+
+.search-box::placeholder {
 }
 
 .generate-btn {
   position: relative;
+  top: -5px;
   font-size: 15px;
-  font-family: Arial;
   width: 70px;
   height: 50px;
   border-width: 2px;

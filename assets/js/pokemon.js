@@ -28,6 +28,9 @@ const catchThePokemon = async () => {
     finalUrl += pokemonId;
   }
 
+  // clear the search input
+  inputElement.value = "";
+
   // Fetch generated URL using axios
   try {
     const fetchPokemon = await axios.get(finalUrl);
