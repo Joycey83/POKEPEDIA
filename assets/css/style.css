@@ -234,12 +234,6 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-/* .pokemon-wrapper {
-  margin: 1.2rem auto;
-  padding: 5rem;
-  background-color: #810e05;
-} */
-
 .hp-heading {
   color: #d4af37;
 }
@@ -253,6 +247,15 @@ body {
   height: 280px;
 }
 
+h5 {
+  color: #d4af37;
+}
+
+.height,
+.weight {
+  font-size: 1.4rem;
+}
+
 .stats {
   display: flex;
   justify-content: center;
@@ -263,6 +266,12 @@ body {
 
 .stats h3 {
   text-align: center;
+  font-size: 3rem;
+}
+
+.stats p {
+  font-size: 1.2rem;
+  color: #d4af37;
 }
 
 .pokeTypeSpan-container {

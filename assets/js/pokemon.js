@@ -42,36 +42,14 @@ const catchThePokemon = async () => {
   }
 };
 
-// const displayMorePokemonData = (data) => {
-//   const pokemonCard = document.querySelector("#pokemon-card");
-//   // Find the English description text of each pokemon
-//   const englishText = data.flavor_text_entries.find(
-//     (entry) => entry.language.name === "en"
-//   );
-
-//   if (englishEntry) {
-//     const description = englishText.flavor_text;
-
-//     console.log("Flavor text:", description);
-
-//     const descElement = document.createElement("p");
-//     descElement.className = "poke-description";
-//     descElement.textContent = description;
-
-//     pokemonCard.appendChild(descElement);
-//   } else {
-//     // Handle case where English description text is not available
-//     console.error("English description not found.");
-//   }
-// };
-// catchThePokemon();
-
 const displayPokemon = (data) => {
   console.log(data);
   const pokeId = data.id;
   const hp = data.stats[0].base_stat;
   const imgSrc = data.sprites.other.dream_world.front_default;
   const pokeName = data.species.name.toUpperCase();
+  const pokeHeight = data.height;
+  const pokeWeight = data.weight;
   const statAttack = data.stats[1].base_stat;
   const statDefense = data.stats[2].base_stat;
   const statSpecialAtk = data.stats[3].base_stat;
@@ -93,7 +71,6 @@ const displayPokemon = (data) => {
 
   const pokemonCard = document.createElement("div");
   pokemonCard.className = "pokemon-card";
-  // pokemonCard.style.backgroundColor = "#a40000";
 
   // Create elements
   const idElement = document.createElement("p");
@@ -112,9 +89,14 @@ const displayPokemon = (data) => {
   imgElement.className = "poke-img";
   imgElement.src = imgSrc;
 
-  // const descElement = document.createElement("p");
-  // descElement.className = "poke-description";
-  // descElement.textContent = description;
+  const heightElement = document.createElement("p");
+  heightElement.className = "poke-height";
+  heightElement.innerHTML = `<h5>Height</h5>
+  <span class="height">${pokeHeight} m</span>`;
+
+  const weightElement = document.createElement("p");
+  weightElement.className = "poke-weight";
+  weightElement.innerHTML = `<h5>Weight</h5> <span class="weight">${pokeWeight} kg</span>`;
 
   const statsElement = document.createElement("div");
   statsElement.className = "stats";
@@ -144,8 +126,9 @@ const displayPokemon = (data) => {
   pokemonCard.appendChild(nameElement);
   pokemonCard.appendChild(hpElement);
   pokemonCard.appendChild(imgElement);
-  // pokemonCard.appendChild(descElement);
   pokemonCard.appendChild(typesContainer);
+  pokemonCard.appendChild(heightElement);
+  pokemonCard.appendChild(weightElement);
   pokemonCard.appendChild(statsElement);
 
   pokemonContainer.appendChild(pokemonCard);
