@@ -172,3 +172,5 @@ searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
   catchThePokemon();
 });
+
+window.addEventListener("load", catchThePokemon);
