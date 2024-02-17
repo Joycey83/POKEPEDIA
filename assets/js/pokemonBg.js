@@ -1,17 +1,6 @@
 // Create function with set interval so the images will randomly change
 
-let bgImg = [
-  "./resources/images/pokeball.jpg",
-  "./resources/images/pokemon-group.jpg",
-  "./resources/images/evil-pokemon.jpg",
-  "./resources/images/fighting-scene.png",
-  "./resources/images/fighting-scene2.jpg",
-  "./resources/images/pokemon-bg.jpg",
-  "./resources/images/pokemon-bg1.jpg",
-  "./resources/images/pokemon-bg2.jpg",
-  "./resources/images/pokemon-bg3.jpg",
-  "./resources/images/pokemon-4.jpg",
-];
+let bgImg = ["", "", "", "", "", "", "", "", "", ""];
 
 const backgroundImg = document.querySelector(".bg-image"); // Access the DOM body element
 
