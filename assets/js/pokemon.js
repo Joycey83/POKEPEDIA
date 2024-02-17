@@ -36,6 +36,12 @@ const catchThePokemon = async () => {
   try {
     const fetchPokemon = await axios.get(finalUrl);
     displayPokemon(fetchPokemon.data);
+
+    // Added new API call here
+    const newApiUrl = "https://pokeapi.co/api/v2/pokemon-species/";
+    const fetchNewPokeApi = await axios.get(newApiUrl);
+
+    displayPokemon(fetchNewPokeApi.data);
   } catch (error) {
     errorMessage.innerHTML = `<h2 class="error-heading">OH NOOOOOOOOOOOOO invalid Pokemon Number or Name! Please try again</h2> <img class="error-img" src="assets/image/no-pokemon-img.png"/>`;
   }
