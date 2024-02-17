@@ -48,6 +48,8 @@ const displayPokemon = (data) => {
   const pokeName = data.species.name.toUpperCase();
   const statAttack = data.stats[1].base_stat;
   const statDefense = data.stats[2].base_stat;
+  const statSpecialAtk = data.stats[3].base_stat;
+  const statSpecialDef = data.stats[4].base_stat;
   const statSpeed = data.stats[5].base_stat;
 
   //   Create a new container for the type spans
@@ -90,6 +92,14 @@ const displayPokemon = (data) => {
     <div>
       <h3>${statDefense}</h3>
       <p>Defense</p>
+    </div>
+    <div>
+      <h3>${statSpecialAtk}</h3>
+      <p>Special Attack</p>
+    </div>
+    <div>
+      <h3>${statSpecialDef}</h3>
+      <p>Special Defense</p>
     </div>
     <div>
       <h3>${statSpeed}</h3>
