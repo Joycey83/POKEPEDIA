@@ -90,12 +90,10 @@ const displayPokemon = (data) => {
   imgElement.src = imgSrc;
 
   const heightElement = document.createElement("p");
-  heightElement.className = "poke-height";
   heightElement.innerHTML = `<h5>Height</h5>
   <span class="height">${pokeHeight} m</span>`;
 
   const weightElement = document.createElement("p");
-  weightElement.className = "poke-weight";
   weightElement.innerHTML = `<h5>Weight</h5> <span class="weight">${pokeWeight} kg</span>`;
 
   const statsElement = document.createElement("div");
