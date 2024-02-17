@@ -82,10 +82,10 @@ const displayPokemon = (data) => {
   imgElement.className = "poke-img";
   imgElement.src = imgSrc;
 
-  const description = response.data.flavor_text_entries[9].flavor_text;
-  const descElement = document.createElement("p");
-  descElement.className = "poke-description";
-  descElement.textContent = description;
+  // const description = response.data.flavor_text_entries[9].flavor_text;
+  // const descElement = document.createElement("p");
+  // descElement.className = "poke-description";
+  // descElement.textContent = description;
 
   const statsElement = document.createElement("div");
   statsElement.className = "stats";
@@ -115,22 +115,10 @@ const displayPokemon = (data) => {
   pokemonCard.appendChild(nameElement);
   pokemonCard.appendChild(hpElement);
   pokemonCard.appendChild(imgElement);
-  pokemonCard.appendChild(description);
   pokemonCard.appendChild(typesContainer);
   pokemonCard.appendChild(statsElement);
 };
 
-async function displayMoreInfo(id) {
-  const id = data.id;
-
-  const apiUrl = `https://pokeapi.co/api/v2/pokemon-species/$${id}}`;
-
-  axios.get(apiUrl).then(displayPokemon);
-}
-
-// function displayMoreInfo(response) {
-
-// }
 // function to get the color types from each specific pokemon
 function createColorSpan(type) {
   switch (type.toLowerCase()) {
