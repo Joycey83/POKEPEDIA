@@ -13,6 +13,7 @@ const catchThePokemon = async () => {
   pokemonCard.innerHTML = "";
   errorMessage.innerHTML = "";
   pokemonLimit.innerHTML = "";
+  pokemonContainer.innerHTML = "";
 
   let pokemonName = inputElement.value.toLowerCase();
   // Generate a random number between 1 and 400
@@ -46,6 +47,7 @@ const displayPokemon = (data) => {
   const hp = data.stats[0].base_stat;
   const imgSrc = data.sprites.other.dream_world.front_default;
   const pokeName = data.species.name.toUpperCase();
+  // const description = data.flavor_text_entries[9].flavor_text;
   const statAttack = data.stats[1].base_stat;
   const statDefense = data.stats[2].base_stat;
   const statSpecialAtk = data.stats[3].base_stat;
@@ -65,6 +67,10 @@ const displayPokemon = (data) => {
     typesContainer.appendChild(typeName);
   });
 
+  const pokemonCard = document.createElement("div");
+  pokemonCard.className = "pokemon-card";
+  // pokemonCard.style.backgroundColor = "#a40000";
+
   // Create elements
   const idElement = document.createElement("p");
   idElement.className = "poke-id-num";
@@ -82,7 +88,6 @@ const displayPokemon = (data) => {
   imgElement.className = "poke-img";
   imgElement.src = imgSrc;
 
-  // const description = response.data.flavor_text_entries[9].flavor_text;
   // const descElement = document.createElement("p");
   // descElement.className = "poke-description";
   // descElement.textContent = description;
@@ -117,6 +122,8 @@ const displayPokemon = (data) => {
   pokemonCard.appendChild(imgElement);
   pokemonCard.appendChild(typesContainer);
   pokemonCard.appendChild(statsElement);
+
+  pokemonContainer.appendChild(pokemonCard);
 };
 
 // function to get the color types from each specific pokemon

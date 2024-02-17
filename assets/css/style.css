@@ -219,15 +219,28 @@ body {
 
 .poke-container {
   margin-top: 2rem 0;
-  /* background-color: #646c64; */
 }
 
-.poke-card {
-  padding: 4rem;
-  margin: 1rem auto;
+.pokemon-card {
+  margin: 1.2rem auto;
+  padding: 5rem;
+  /* background-color: #a40000; */
+  background-image: linear-gradient(
+    178.2deg,
+    rgba(118, 8, 23, 0.613) 10.9%,
+    rgba(158, 12, 33, 1) 62.6%
+  );
+  border-radius: 20px;
 }
+
+/* .pokemon-wrapper {
+  margin: 1.2rem auto;
+  padding: 5rem;
+  background-color: #810e05;
+} */
+
 .hp-heading {
-  color: red;
+  color: #d4af37;
 }
 .hp {
   font-size: 2rem;
