@@ -234,6 +234,14 @@
   color: #fff;
 }
 
+.poke-id-num {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: red;
+  padding: 1.2rem;
+}
+
 /* ERROR MESSAGE STYLES */
 .error-img,
 .poke-limit-img {
