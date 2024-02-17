@@ -8,6 +8,7 @@ const errorMessage = document.querySelector("#error-message");
 const pokemonLimit = document.querySelector("#poke-limit");
 
 const pokeApiUrl = " https://pokeapi.co/api/v2/pokemon/";
+// const newApiUrl = "https://pokeapi.co/api/v2/pokemon-species/";
 
 const catchThePokemon = async () => {
   pokemonCard.innerHTML = "";
@@ -36,16 +37,34 @@ const catchThePokemon = async () => {
   try {
     const fetchPokemon = await axios.get(finalUrl);
     displayPokemon(fetchPokemon.data);
-
-    // Added new API call here
-    const newApiUrl = "https://pokeapi.co/api/v2/pokemon-species/";
-    const fetchNewPokeApi = await axios.get(newApiUrl);
-
-    displayPokemon(fetchNewPokeApi.data);
   } catch (error) {
     errorMessage.innerHTML = `<h2 class="error-heading">OH NOOOOOOOOOOOOO invalid Pokemon Number or Name! Please try again</h2> <img class="error-img" src="assets/image/no-pokemon-img.png"/>`;
   }
 };
+
+// const displayMorePokemonData = (data) => {
+//   const pokemonCard = document.querySelector("#pokemon-card");
+//   // Find the English description text of each pokemon
+//   const englishText = data.flavor_text_entries.find(
+//     (entry) => entry.language.name === "en"
+//   );
+
+//   if (englishEntry) {
+//     const description = englishText.flavor_text;
+
+//     console.log("Flavor text:", description);
+
+//     const descElement = document.createElement("p");
+//     descElement.className = "poke-description";
+//     descElement.textContent = description;
+
+//     pokemonCard.appendChild(descElement);
+//   } else {
+//     // Handle case where English description text is not available
+//     console.error("English description not found.");
+//   }
+// };
+// catchThePokemon();
 
 const displayPokemon = (data) => {
   console.log(data);
@@ -53,7 +72,6 @@ const displayPokemon = (data) => {
   const hp = data.stats[0].base_stat;
   const imgSrc = data.sprites.other.dream_world.front_default;
   const pokeName = data.species.name.toUpperCase();
-  // const description = data.flavor_text_entries[9].flavor_text;
   const statAttack = data.stats[1].base_stat;
   const statDefense = data.stats[2].base_stat;
   const statSpecialAtk = data.stats[3].base_stat;
@@ -126,6 +144,7 @@ const displayPokemon = (data) => {
   pokemonCard.appendChild(nameElement);
   pokemonCard.appendChild(hpElement);
   pokemonCard.appendChild(imgElement);
+  // pokemonCard.appendChild(descElement);
   pokemonCard.appendChild(typesContainer);
   pokemonCard.appendChild(statsElement);
 
