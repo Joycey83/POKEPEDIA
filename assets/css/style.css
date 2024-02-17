@@ -16,6 +16,17 @@ body {
 }
 
 .search-box {
+  /* font-size: 18px;
+  padding: 5px 10px; */
+  /* width: 100%; */
+  /* padding-left: 34px;
+  outline: none;
+  background: #ffffff;
+  color: #000000;
+  border: 4px solid #e3350d;
+  border-radius: 2px;
+  box-shadow: 3px 3px 2px 0px #e2e2e2;
+  transition: 0.3s ease; */
   width: 250px;
   padding: 0.5rem;
   margin: 0 0.5rem;
