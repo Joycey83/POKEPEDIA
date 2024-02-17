@@ -235,10 +235,11 @@ body {
 }
 
 .hp-heading {
+  font-size: 1.7rem;
   color: #d4af37;
 }
 .hp {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .poke-img {
   display: block;
@@ -270,6 +271,7 @@ h5 {
 }
 
 .stats p {
+  text-align: center;
   font-size: 1.2rem;
   color: #d4af37;
 }
@@ -281,7 +283,13 @@ h5 {
 }
 
 .poke-type-span {
+  font-size: 1.1rem;
   color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 1rem;
 }
 
 .poke-id-num {
