@@ -84,7 +84,7 @@ const displayPokemon = (data) => {
 
   const statsElement = document.createElement("div");
   statsElement.className = "stats";
-  statsElement.innerHTML = `
+  statsElement.innerHTML = ` 
     <div>
       <h3>${statAttack}</h3>
       <p>Attack</p>
@@ -113,6 +113,14 @@ const displayPokemon = (data) => {
   pokemonCard.appendChild(typesContainer);
   pokemonCard.appendChild(statsElement);
 };
+
+async function displayMoreInfo(id) {
+  const id = data.id;
+
+  const apiUrl = `https://pokeapi.co/api/v2/pokemon-species/$${id}}`;
+
+  axios.get(apiUrl).then(displayPokemon);
+}
 
 // function to get the color types from each specific pokemon
 function createColorSpan(type) {
