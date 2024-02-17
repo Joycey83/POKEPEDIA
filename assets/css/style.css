@@ -223,7 +223,7 @@ body {
 
 .pokemon-card {
   margin: 1.2rem auto;
-  padding: 5rem;
+  padding: 2rem 2rem;
   /* background-color: #a40000; */
   background-image: linear-gradient(
     178.2deg,
@@ -231,6 +231,7 @@ body {
     rgba(158, 12, 33, 1) 62.6%
   );
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* .pokemon-wrapper {
