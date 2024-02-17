@@ -38,6 +38,7 @@ const catchThePokemon = async () => {
 
 const displayPokemon = (data) => {
   console.log(data);
+  const pokeId = data.id;
   const hp = data.stats[0].base_stat;
   const imgSrc = data.sprites.other.dream_world.front_default;
   const pokeName = data.species.name.toUpperCase();
@@ -59,6 +60,10 @@ const displayPokemon = (data) => {
   });
 
   // Create elements
+  const idElement = document.createElement("p");
+  idElement.className = "poke-id-num";
+  idElement.innerHTML = `<span>#${String(pokeId).padStart(3, "0")}</span> `;
+
   const nameElement = document.createElement("h1");
   nameElement.className = "poke-name";
   nameElement.textContent = pokeName;
