@@ -43,17 +43,19 @@
     <main>
       <!-- search engine -->
       <div class="search-box-container">
-        <input
-          type="search"
-          placeholder="Enter Name or ID..."
-          class="search-box"
-          id="pokemon-name-input"
-          autocomplete="off"
-        />
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter Name or ID..."
+            class="search-box"
+            id="pokemon-name-input"
+            autocomplete="off"
+          />
 
-        <button class="generate-btn" id="generate-button">
-          <ion-icon name="shuffle-outline" class="shuffle-icon"></ion-icon>
-        </button>
+          <button class="generate-btn" id="generate-button">
+            <ion-icon name="shuffle-outline" class="shuffle-icon"></ion-icon>
+          </button>
+        </form>
       </div>
       <!-- Pokemon Image -->
       <div class="container-fluid">

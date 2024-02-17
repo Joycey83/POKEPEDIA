@@ -1,3 +1,4 @@
+const searchForm = document.querySelector("#search-form");
 const inputElement = document.querySelector("#pokemon-name-input");
 const generateBtn = document.querySelector("#generate-button");
 const pokemonContainer = document.querySelector(".poke-container");
@@ -145,6 +146,11 @@ function createColorSpan(type) {
 }
 
 generateBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  catchThePokemon();
+});
+
+searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
   catchThePokemon();
 });
