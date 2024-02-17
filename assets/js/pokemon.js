@@ -92,7 +92,7 @@ const displayPokemon = (data) => {
       <p>Speed</p>
     </div>
   `;
-
+  pokemonCard.appendChild(idElement);
   pokemonCard.appendChild(nameElement);
   pokemonCard.appendChild(hpElement);
   pokemonCard.appendChild(imgElement);
