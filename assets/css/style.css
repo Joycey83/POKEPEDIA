@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Share Tech Mono", monospace;
+}
+
 .search-box-container {
   margin: 2rem 0;
   display: flex;
@@ -190,6 +194,7 @@
 }
 
 .poke-name {
+  font-size: 4rem;
   text-align: center;
   line-height: 1.2;
   letter-spacing: 1px;
