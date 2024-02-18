@@ -62,6 +62,10 @@ const displayPokemon = (data) => {
   const typesContainer = document.createElement("div");
   typesContainer.className = "pokeTypeSpan-container";
 
+  // create a new container for ablity spans
+  const abilityContainer = document.createElement("div");
+  abilityContainer.className = "poke-ability-container";
+
   // Getting both types and adding specific color type
   data.types.forEach((type) => {
     const typeName = document.createElement("span");
@@ -69,6 +73,13 @@ const displayPokemon = (data) => {
     typeName.innerText = type.type.name;
     typeName.classList.add(createColorSpan(type.type.name));
     typesContainer.appendChild(typeName);
+  });
+
+  data.abilities.forEach((ability) => {
+    const abilityName = document.createElement("span");
+    typeName.innerText = ability.ability.name;
+    typeName.classList.add("ability-color");
+    abilityContainer.appendChild(abilityName);
   });
 
   const pokemonCard = document.createElement("div");
