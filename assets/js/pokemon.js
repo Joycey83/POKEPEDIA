@@ -19,10 +19,10 @@ const catchThePokemon = async () => {
 
   let pokemonName = inputElement.value.toLowerCase();
   // Generate a random number between 1 and 500
-  let pokemonId = Math.floor(Math.random() * 500) + 1;
+  let pokemonId = Math.floor(Math.random() * 1025) + 1;
 
   let finalUrl = pokeApiUrl;
-  if (!isNaN(pokemonName) && pokemonName > 500) {
+  if (!isNaN(pokemonName) && pokemonName > 1025) {
     pokemonLimit.innerHTML = `<img class="poke-limit-img" src="assets/image/cant-catch-all-logo.jpg"/>`;
     return;
   } else if (pokemonName) {
@@ -47,7 +47,8 @@ const displayPokemon = (data) => {
   console.log(data);
   const pokeId = data.id;
   const hp = data.stats[0].base_stat;
-  const imgSrc = data.sprites.other.dream_world.front_default;
+  const imgSrc = data.sprites.other.home.front_default;
+  // const imgSrc = data.sprites.other.dream_world.front_default;
   const pokeName = data.species.name.toUpperCase();
   const pokeHeight = data.height;
   const pokeWeight = data.weight;
