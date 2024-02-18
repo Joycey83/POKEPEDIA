@@ -232,10 +232,6 @@ main .logo {
   border-radius: 5px;
 }
 
-.outer-container {
-  position: relative;
-}
-
 .poke-name {
   font-size: 4rem;
   text-align: center;
