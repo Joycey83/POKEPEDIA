@@ -3,11 +3,9 @@ const inputElement = document.querySelector("#pokemon-name-input");
 const generateBtn = document.querySelector("#generate-button");
 const pokemonContainer = document.querySelector(".poke-container");
 const pokemonRightContainer = document.querySelector(".poke-right-container");
-const pokemonNum = document.querySelector(".poke-number");
 const pokemonCard = document.querySelector("#pokemon-card");
 const errorMessage = document.querySelector("#error-message");
 const pokemonLimit = document.querySelector("#poke-limit");
-const pokemonBgContainer = document.querySelector(".bg-image");
 const pokemonAttributes = document.querySelector(".poke-attributes");
 
 const pokeApiUrl = " https://pokeapi.co/api/v2/pokemon/";
@@ -138,10 +136,6 @@ const displayPokemon = (data) => {
   pokemonRightContainer.appendChild(statsElement);
 
   pokemonContainer.appendChild(pokemonCard);
-
-  // statsElement.style.display = "grid";
-  // statsElement.style.gridTemplateColumns = "1fr 1fr"; // Two equal-width columns
-  // statsElement.style.gap = "1rem";
 };
 
 // function to get the color types from each specific pokemon
