@@ -2,19 +2,21 @@ const searchForm = document.querySelector("#search-form");
 const inputElement = document.querySelector("#pokemon-name-input");
 const generateBtn = document.querySelector("#generate-button");
 const pokemonContainer = document.querySelector(".poke-container");
+const pokemonRightContainer = document.querySelector(".poke-right-container");
 const pokemonNum = document.querySelector(".poke-number");
 const pokemonCard = document.querySelector("#pokemon-card");
 const errorMessage = document.querySelector("#error-message");
 const pokemonLimit = document.querySelector("#poke-limit");
+const pokemonBgContainer = document.querySelector(".bg-image");
 
 const pokeApiUrl = " https://pokeapi.co/api/v2/pokemon/";
-// const newApiUrl = "https://pokeapi.co/api/v2/pokemon-species/";
 
 const catchThePokemon = async () => {
   pokemonCard.innerHTML = "";
   errorMessage.innerHTML = "";
   pokemonLimit.innerHTML = "";
   pokemonContainer.innerHTML = "";
+  pokemonRightContainer.innerHTML = "";
 
   let pokemonName = inputElement.value.toLowerCase();
   // Generate a random number between 1 and 400
@@ -119,17 +121,22 @@ const displayPokemon = (data) => {
       <h3>${statSpeed}</h3>
       <p>Speed</p>
     </div>
+  
   `;
   pokemonCard.appendChild(idElement);
   pokemonCard.appendChild(nameElement);
   pokemonCard.appendChild(hpElement);
   pokemonCard.appendChild(imgElement);
   pokemonCard.appendChild(typesContainer);
-  pokemonCard.appendChild(heightElement);
-  pokemonCard.appendChild(weightElement);
-  pokemonCard.appendChild(statsElement);
+  pokemonRightContainer.appendChild(heightElement);
+  pokemonRightContainer.appendChild(weightElement);
+  pokemonRightContainer.appendChild(statsElement);
 
   pokemonContainer.appendChild(pokemonCard);
+
+  // statsElement.style.display = "grid";
+  // statsElement.style.gridTemplateColumns = "1fr 1fr"; // Two equal-width columns
+  // statsElement.style.gap = "1rem";
 };
 
 // function to get the color types from each specific pokemon

@@ -36,8 +36,8 @@
     <!-- AXIOS -->
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <script src="/assets/js/pokemonBg.js" defer></script>
     <script src="/assets/js/pokemon.js" defer></script>
+
     <title>Pokepedia</title>
   </head>
   <body class="bg-image">
@@ -59,15 +59,31 @@
         </form>
       </div>
       <!-- Pokemon Image -->
-      <div class="container-fluid">
-        <div
-          class="d-flex justify-content-center align-items-center flex-column poke-container"
-        >
-          <div id="pokemon-card" class="poke-card"></div>
-          <div id="error-message"></div>
-          <div id="poke-limit"></div>
+      <div id="error-message"></div>
+      <div id="poke-limit"></div>
+      <div class="container-fluid outer-container">
+        <div class="row">
+          <div class="col-md-6 poke-container">
+            <div id="pokemon-card" class="poke-card"></div>
+            <!-- Your content for the left column -->
+          </div>
+
+          <div class="col-md-6 poke-right-container"></div>
+
+          <!-- Your content for the right column -->
         </div>
       </div>
+
+      <!-- <div class="container-fluid">
+        <div class="row">
+          <div class="col poke-container">
+            <div id="pokemon-card" class="poke-card col"></div>
+            <div id="error-message"></div>
+            <div id="poke-limit"></div>
+          </div>
+        </div>
+      </div> -->
     </main>
+    <!-- d-flex justify-content-center align-items-center flex-column -->
   </body>
 </html>
