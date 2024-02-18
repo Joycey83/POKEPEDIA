@@ -247,8 +247,8 @@ main .logo {
   margin-top: 2rem 0;
 }
 div.pokemon-card {
-  width: 500px;
-  height: 500px;
+  max-width: 500px;
+  height: auto;
 }
 .pokemon-card {
   margin: 1.2rem auto;
@@ -275,6 +275,8 @@ div.pokemon-card {
   margin: 0.3rem auto;
   width: 200px;
   height: 200px;
+  max-width: 100%;
+  height: auto;
 }
 
 h5 {
@@ -442,6 +444,10 @@ h5 {
 }
 
 @media (max-width: 600px) {
+  .poke-container {
+    position: absolute;
+    right: 0.1rem;
+  }
   h1.poke-name {
     font-size: 2rem;
   }
@@ -449,11 +455,6 @@ h5 {
   .stats {
     position: absolute;
     left: 40px;
-  }
-
-  .poke-img {
-    width: 140px;
-    height: 140px;
   }
 
   .poke-ability-container {
