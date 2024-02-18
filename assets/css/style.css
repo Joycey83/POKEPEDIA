@@ -7,6 +7,7 @@
 body {
   font-family: "Share Tech Mono", monospace;
   background-color: #000000;
+  overflow-x: hidden;
 }
 
 main .logo {
