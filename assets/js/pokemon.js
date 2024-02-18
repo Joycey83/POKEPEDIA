@@ -8,6 +8,7 @@ const pokemonCard = document.querySelector("#pokemon-card");
 const errorMessage = document.querySelector("#error-message");
 const pokemonLimit = document.querySelector("#poke-limit");
 const pokemonBgContainer = document.querySelector(".bg-image");
+const pokemonAttributes = document.querySelector(".poke-attributes");
 
 const pokeApiUrl = " https://pokeapi.co/api/v2/pokemon/";
 
@@ -19,11 +20,11 @@ const catchThePokemon = async () => {
   pokemonRightContainer.innerHTML = "";
 
   let pokemonName = inputElement.value.toLowerCase();
-  // Generate a random number between 1 and 400
-  let pokemonId = Math.floor(Math.random() * 400) + 1;
+  // Generate a random number between 1 and 500
+  let pokemonId = Math.floor(Math.random() * 500) + 1;
 
   let finalUrl = pokeApiUrl;
-  if (!isNaN(pokemonName) && pokemonName > 400) {
+  if (!isNaN(pokemonName) && pokemonName > 500) {
     pokemonLimit.innerHTML = `<img class="poke-limit-img" src="assets/image/cant-catch-all-logo.jpg"/>`;
     return;
   } else if (pokemonName) {
@@ -91,12 +92,16 @@ const displayPokemon = (data) => {
   imgElement.className = "poke-img";
   imgElement.src = imgSrc;
 
-  const heightElement = document.createElement("p");
+  const heightElement = document.createElement("div");
+  heightElement.className = "poke-height";
   heightElement.innerHTML = `<h5>Height</h5>
   <span class="height">${pokeHeight} m</span>`;
+  pokemonAttributes.appendChild(heightElement);
 
-  const weightElement = document.createElement("p");
+  const weightElement = document.createElement("div");
+  weightElement.className = "poke-weight";
   weightElement.innerHTML = `<h5>Weight</h5> <span class="weight">${pokeWeight} kg</span>`;
+  pokemonAttributes.appendChild(weightElement);
 
   const statsElement = document.createElement("div");
   statsElement.className = "stats";
@@ -111,11 +116,11 @@ const displayPokemon = (data) => {
     </div>
     <div>
       <h3>${statSpecialAtk}</h3>
-      <p>Special Attack</p>
+      <p>Special.Atk</p>
     </div>
     <div>
       <h3>${statSpecialDef}</h3>
-      <p>Special Defense</p>
+      <p>Special.Def</p>
     </div>
     <div>
       <h3>${statSpeed}</h3>

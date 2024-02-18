@@ -9,6 +9,17 @@ body {
   background-color: #000000;
 }
 
+main .logo {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #810e05;
+  font-family: "Anta", sans-serif;
+  margin-top: 1.2rem;
+  margin-left: 0.3rem;
+}
+
 .bg-image {
   background-image: (
     55deg,
@@ -21,7 +32,7 @@ body {
 }
 
 .search-box-container {
-  margin: 2rem 0;
+  margin: 0.6rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,7 +252,7 @@ div.pokemon-card {
 }
 .pokemon-card {
   margin: 1.2rem auto;
-  padding: 2rem 2rem;
+  padding: 1.5rem 1.2rem;
   /* background-color: #a40000; */
   background-image: linear-gradient(
     178.2deg,
@@ -261,21 +272,36 @@ div.pokemon-card {
 }
 .poke-img {
   display: block;
-  margin: 1.2rem auto;
-  width: 220px;
-  height: 220px;
+  margin: 0.3rem auto;
+  width: 200px;
+  height: 200px;
 }
 
 h5 {
   color: #d4af37;
 }
 
+.poke-right-container {
+  position: relative;
+}
+
+.poke-height {
+  position: absolute;
+  top: 120px;
+}
+.poke-weight {
+  position: absolute;
+  top: 240px;
+}
 .height,
 .weight {
+  color: #fff;
   font-size: 1.4rem;
 }
 
 .stats {
+  position: absolute;
+  top: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,6 +312,7 @@ h5 {
 .stats h3 {
   text-align: center;
   font-size: 2.2rem;
+  color: antiquewhite;
 }
 
 .stats p {
@@ -295,6 +322,7 @@ h5 {
 }
 
 .pokeTypeSpan-container {
+  margin-top: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,4 +364,67 @@ h5 {
   background-color: #0f0e0e;
   text-align: center;
   line-height: 1.2;
+}
+
+/* Tablet (Medium) */
+/* @media (max-width: 768px) {
+  .poke-container {
+    margin-left: 16%;
+  }
+
+  .poke-right-container {
+    position: absolute;
+    top: 410px;
+  }
+
+  .stats {
+    position: absolute;
+    left: 50px;
+    gap: 30px;
+  }
+
+  .stats h3 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: antiquewhite;
+  }
+
+  .stats p {
+    font-size: 0.6rem;
+  }
+} */
+
+@media (max-width: 820px) {
+  .poke-container {
+    margin-left: 16%;
+  }
+
+  .poke-right-container {
+    position: absolute;
+    top: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stats {
+    position: absolute;
+    left: 165px;
+  }
+
+  .stats h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: antiquewhite;
+  }
+
+  .stats p {
+    font-size: 1rem;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-top: 0.2rem;
+  }
 }
