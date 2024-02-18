@@ -366,6 +366,30 @@ h5 {
   line-height: 1.2;
 }
 
+.poke-ability-container {
+  position: absolute;
+  left: 110px;
+  top: 200px;
+}
+
+span.ability-type-span {
+  text-align: center;
+  display: inline-block;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  background-color: red;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+p.ability-heading {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
 /* Tablet (Medium) */
 /* @media (max-width: 768px) {
   .poke-container {
@@ -426,5 +450,27 @@ h5 {
     align-items: center;
     align-content: center;
     margin-top: 0.2rem;
+  }
+
+  .poke-ability-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 400px;
+    top: 150px;
+  }
+
+  span.ability-type-span {
+    text-align: center;
+    font-size: 0.4rem;
+    margin-left: 8px;
+  }
+
+  .ability-heading {
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
   }
 }

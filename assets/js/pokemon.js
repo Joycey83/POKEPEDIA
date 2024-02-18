@@ -75,10 +75,12 @@ const displayPokemon = (data) => {
     typesContainer.appendChild(typeName);
   });
 
-  data.abilities.forEach((ability) => {
+  data.abilities.forEach((ability, index) => {
     const abilityName = document.createElement("span");
-    typeName.innerText = ability.ability.name;
-    typeName.classList.add("ability-color");
+    abilityName.className = "ability-type-span";
+    abilityName.innerHTML = `<p class="ability-heading">Abilities #${
+      index + 1
+    }</p>${ability.ability.name} `;
     abilityContainer.appendChild(abilityName);
   });
 
@@ -143,6 +145,7 @@ const displayPokemon = (data) => {
   pokemonCard.appendChild(hpElement);
   pokemonCard.appendChild(imgElement);
   pokemonCard.appendChild(typesContainer);
+  pokemonRightContainer.appendChild(abilityContainer);
   pokemonRightContainer.appendChild(heightElement);
   pokemonRightContainer.appendChild(weightElement);
   pokemonRightContainer.appendChild(statsElement);
