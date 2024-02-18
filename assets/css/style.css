@@ -465,4 +465,10 @@ h5 {
     width: 140px;
     height: 140px;
   }
+
+  .poke-ability-container {
+    position: absolute;
+    left: 240px;
+    top: 140px;
+  }
 }
