@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
 body {
   font-family: "Share Tech Mono", monospace;
   background-color: #000000;
-  overflow-x: hidden;
 }
 
 main .logo {
