@@ -441,14 +441,28 @@ h5 {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .poke-container {
-    margin: 0.5rem 0.4rem;
+    margin-left: 12%;
     padding: 0;
+  }
+
+  div.pokemon-card {
+    width: 350px;
+    height: 350px;
+  }
+
+  h1.poke-name {
+    font-size: 2rem;
   }
 
   .stats {
     position: absolute;
     left: 40px;
+  }
+
+  .poke-img {
+    width: 140px;
+    height: 140px;
   }
 }
