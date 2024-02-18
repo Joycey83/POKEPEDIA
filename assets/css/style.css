@@ -368,55 +368,21 @@ h5 {
 
 .poke-ability-container {
   position: absolute;
-  left: 110px;
-  top: 200px;
+  left: 130px;
+  top: 120px;
 }
 
-span.ability-type-span {
-  text-align: center;
-  display: inline-block;
-  padding: 0.3rem;
+.ability-heading {
+  font-size: 1rem;
+}
+
+.ability-type p {
   font-size: 1.2rem;
-  background-color: red;
-  border-radius: 10px;
-  margin-left: 5px;
-}
-
-p.ability-heading {
-  font-size: 0.8rem;
-  text-align: center;
+  padding: 0.2rem;
   color: #fff;
-  text-transform: uppercase;
-  margin: 0;
+  background-color: #810e05;
+  text-align: center;
 }
-
-/* Tablet (Medium) */
-/* @media (max-width: 768px) {
-  .poke-container {
-    margin-left: 16%;
-  }
-
-  .poke-right-container {
-    position: absolute;
-    top: 410px;
-  }
-
-  .stats {
-    position: absolute;
-    left: 50px;
-    gap: 30px;
-  }
-
-  .stats h3 {
-    text-align: center;
-    font-size: 2.2rem;
-    color: antiquewhite;
-  }
-
-  .stats p {
-    font-size: 0.6rem;
-  }
-} */
 
 @media (max-width: 820px) {
   .poke-container {
@@ -433,7 +399,7 @@ p.ability-heading {
 
   .stats {
     position: absolute;
-    left: 165px;
+    left: 180px;
   }
 
   .stats h3 {
@@ -443,7 +409,7 @@ p.ability-heading {
   }
 
   .stats p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.2;
     letter-spacing: 1px;
     display: flex;
@@ -454,23 +420,35 @@ p.ability-heading {
 
   .poke-ability-container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+
     position: absolute;
     left: 400px;
-    top: 150px;
+    top: 100px;
   }
 
-  span.ability-type-span {
-    text-align: center;
-    font-size: 0.4rem;
-    margin-left: 8px;
-  }
-
-  p.ability-heading {
-    font-size: 0.4rem;
-    text-align: center;
+  .ability-type p {
+    font-size: 0.5rem;
+    padding: 0.2rem;
     color: #fff;
-    text-transform: uppercase;
+    background-color: #810e05;
+    text-align: center;
+  }
+
+  main .logo {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .poke-container {
+    margin: 0.5rem 0.4rem;
+    padding: 0;
+  }
+
+  .stats {
+    position: absolute;
+    left: 40px;
   }
 }

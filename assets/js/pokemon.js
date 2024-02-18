@@ -76,11 +76,12 @@ const displayPokemon = (data) => {
   });
 
   data.abilities.forEach((ability, index) => {
-    const abilityName = document.createElement("span");
-    abilityName.className = "ability-type-span";
-    abilityName.innerHTML = `<p class="ability-heading">Abilities #${
+    const abilityName = document.createElement("div");
+    abilityName.className = "ability-type";
+    abilityName.innerHTML = `<h5 class="ability-heading">Ability #${
       index + 1
-    }</p>${ability.ability.name} `;
+    }</h5><p>${ability.ability.name}</p>`;
+    // abilityName.innerText = ability.ability.name;
     abilityContainer.appendChild(abilityName);
   });
 
