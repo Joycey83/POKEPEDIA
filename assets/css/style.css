@@ -454,7 +454,7 @@ p.ability-heading {
 
   .poke-ability-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: absolute;
     left: 400px;
@@ -467,8 +467,8 @@ p.ability-heading {
     margin-left: 8px;
   }
 
-  .ability-heading {
-    font-size: 10px;
+  p.ability-heading {
+    font-size: 0.4rem;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
