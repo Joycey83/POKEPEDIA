@@ -107,13 +107,13 @@ const displayPokemon = (data) => {
 
   const heightElement = document.createElement("div");
   heightElement.className = "poke-height";
-  heightElement.innerHTML = `<h5>Height</h5>
+  heightElement.innerHTML = `<h5 class="height-heading">Height</h5>
   <span class="height">${pokeHeight} m</span>`;
   pokemonAttributes.appendChild(heightElement);
 
   const weightElement = document.createElement("div");
   weightElement.className = "poke-weight";
-  weightElement.innerHTML = `<h5>Weight</h5> <span class="weight">${pokeWeight} kg</span>`;
+  weightElement.innerHTML = `<h5 class="weight-heading">Weight</h5> <span class="weight">${pokeWeight} kg</span>`;
   pokemonAttributes.appendChild(weightElement);
 
   const statsElement = document.createElement("div");
