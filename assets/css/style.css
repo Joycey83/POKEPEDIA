@@ -58,6 +58,7 @@ main .logo {
 }
 
 .search-box::placeholder {
+  color: #931414;
 }
 
 .generate-btn {

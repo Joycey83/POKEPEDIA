@@ -18,11 +18,11 @@ const catchThePokemon = async () => {
   pokemonRightContainer.innerHTML = "";
 
   let pokemonName = inputElement.value.toLowerCase();
-  // Generate a random number between 1 and 500
-  let pokemonId = Math.floor(Math.random() * 900) + 1;
+  // Generate a random number between 1 and 800
+  let pokemonId = Math.floor(Math.random() * 800) + 1;
 
   let finalUrl = pokeApiUrl;
-  if (!isNaN(pokemonName) && pokemonName > 1025) {
+  if (!isNaN(pokemonName) && pokemonName > 800) {
     pokemonLimit.innerHTML = `<img class="poke-limit-img" src="assets/image/cant-catch-all-logo.jpg"/>`;
     return;
   } else if (pokemonName) {
