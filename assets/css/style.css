@@ -353,14 +353,18 @@ h5 {
 .poke-limit-img {
   display: block;
   margin: 0 auto;
-  width: 300px;
-  height: 300px;
+  max-width: 350px;
+  height: auto;
+  margin-top: 3rem;
+}
+
+.poke-limit-img {
+  border-radius: 10px;
 }
 
 .error-heading {
   font-size: 1.8rem;
   color: red;
-  background-color: #0f0e0e;
   text-align: center;
   line-height: 1.2;
 }
