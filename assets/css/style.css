@@ -389,6 +389,9 @@ h5 {
   .poke-container {
     margin-left: 25%;
   }
+  h1.poke-name {
+    font-size: 1.7rem;
+  }
 
   .poke-right-container {
     position: absolute;
@@ -401,10 +404,12 @@ h5 {
   .poke-height {
     position: absolute;
     top: 200px;
+    left: 200px;
   }
   .poke-weight {
     position: absolute;
     top: 280px;
+    left: 200px;
   }
 
   .stats {
@@ -434,16 +439,13 @@ h5 {
     align-items: center;
     gap: 20px;
     position: absolute;
-    left: 300px;
-    top: 230px;
+    left: 350px;
+    top: 200px;
   }
 
   .ability-type p {
-    font-size: 0.5rem;
+    font-size: 0.45rem;
     padding: 0.2rem;
-    color: #fff;
-    background-color: #810e05;
-    text-align: center;
   }
 
   main .logo {
